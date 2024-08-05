@@ -27,8 +27,9 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <link rel="icon" href="./favicon.png" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5892436367821409"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./assets/lazy.js"></script>
+  <script src="./assets/scroll.js"></script>
 
   <meta name="description" content="Ringomar's github page" />
   <meta name="keywords" content="ringomar, ringo, mar, rin" />
@@ -42,19 +43,39 @@
       margin: 0px;
       padding: 0px;
       background-color: var(--dark);
+      scroll-behavior: smooth;
     }
 
     .full {
       height: 100%;
     }
 
-    .card {
-      transition: all 300ms ease-in;
+    :target {
+      border-color: none;
+      box-shadow: none;
     }
 
-    .card:hover {
-      transform: scale(1.05);
-      transition: all 300ms ease-in;
+    main img {
+      float: left;
+      margin-right: 15px;
+      height: 128px;
+      width: 128px;
+    }
+
+    .bg-cc {
+      background-color: #2d3038;
+      color: #bbc0be;
+    }
+
+    .pagination .page-link {
+      background: #201f27;
+      color: #6a7273;
+      border: 0;
+    }
+
+    .page-item.active .page-link {
+      background-color: #17a2b8;
+      border-color: #17a2b8;
     }
   </style>
 </head>
@@ -68,13 +89,13 @@
     <div class="kofi">
       <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
       <script type="text/javascript">
-        kofiwidget2.init("Support Me on Ko-fi", "#29abe0", "Y8Y1WZQDA");
+        kofiwidget2.init("Support Me on Ko-fi", "#17a2b8", "Y8Y1WZQDA");
         kofiwidget2.draw();
       </script>
     </div>
   </nav>
-  <div class="container">
-    <div class="align-items-center row p-5">
+  <div class="hero">
+    <div class="align-items-center row container p-5 mx-auto mb-4">
       <div class="col-md-8 col-sm-1">
         <h1 class="display-1 font-weight-bold text-white">RINGO MAR</h1>
         <p class="text-secondary">
@@ -91,120 +112,16 @@
     </div>
   </div>
 
-  <div class="Containter bg-secondary fuild p-5 mt-5">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
-      <div class="col mb-4">
-        <div class="bg-dark border border-dark card m-md-5 rounded text-white">
-          <a href="../pookieKeto/"><img src="./keto.jpg" class="card-img-top" alt="Keto" /></a>
-          <div class="card-body bg-dark">
-            <h5 class="card-title">Rin Keto</h5>
-            <p class="card-text">
-              I'm putting this here for pookie, she is a mega nerd. Thank you
-              that is all have a nice day.
-            </p>
-            <a href="../pookieKeto/" class="btn btn-info">Go to website</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col mb-4">
-        <div class="bg-dark border border-dark card m-md-5 rounded text-white">
-          <a href="https://rinfolio.vercel.app/"><img src="./folio.png" class="card-img-top" alt="rinFoilo" />
-          </a>
-          <div class="card-body bg-dark">
-            <h5 class="card-title">My Portfolio</h5>
-            <p class="card-text">
-              If you some how got to this website by any other means, check
-              out my rinfolio! A react website!
-            </p>
-
-            <a href="https://rinfolio.vercel.app/" class="btn btn-success">Go to website</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
-      <div class="col mb-4">
-        <div class="bg-dark border border-dark card m-md-5 rounded text-white">
-          <a href="https://ringomar.github.io/modern-portfolio/">
-            <img src="./modern.png" class="card-img-top" alt="rinFoilo" />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Modern Portfolio</h5>
-            <p class="card-text">
-              The future is something that I dream about, with sleek websites
-              and minimalistic design. I envision a bold and outgoing
-              aesthetic that I am eager to try my hand at creating. While my
-              skills may be limited at the moment, I am determined to continue
-              improving and making my vision a reality.
-            </p>
-
-            <a href="https://ringomar.github.io/modern-portfolio/" class="btn btn-success">Go to website</a>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="bg-dark border border-dark card m-md-5 rounded text-white">
-          <a href="https://ringomar.github.io/rinrain/">
-            <img src="./rainmeter.png" class="card-img-top" alt="rinFoilo" />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Rain Gauge</h5>
-            <p class="card-text">
-              This website is about a homemade rain gauge that is located in
-              my backyard. The website also provides updates on the latest
-              rainfall measurements taken from the gauge thrugh out the period
-              February - July, and a chart to show historical data.
-            </p>
-
-            <a href="https://ringomar.github.io/rinrain/" class="btn btn-success">Go to website</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
-      <div class="col mb-4">
-        <div class="bg-dark border border-dark card m-md-5 rounded text-white">
-          <a href="https://ringomar.github.io/project-temporal/">
-            <img src="./52yk69eNjA.png" class="card-img-top" alt="rinFoilo" />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Project Temporal</h5>
-            <p class="card-text">
-              Project Temper is a website that documents the use of OpenAI's
-              Whisper to listen to audio and act as a Twitch chat bot. The
-              goal of the project is to demonstrate the capabilities of
-              Whisper in understanding and responding to natural language in
-              real-time audio streams.
-            </p>
-
-            <a href="https://ringomar.github.io/project-temporal/" class="btn btn-success">Go to website</a>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="bg-dark border border-dark card m-md-5 rounded text-white">
-          <a href="https://ringomar.github.io/rinsky/">
-            <img src="./rinsky.png" class="card-img-top" alt="rinsky" />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Rin Sky</h5>
-            <p class="card-text">
-              Rin Sky is a web application that allows you to track flights in
-              real-time within a specified geographical zone. It utilizes the
-              OpenSky Network API to fetch flight data and displays the flight
-              positions on an interactive map. Whether you're an aviation
-              enthusiast or not, Rin Sky provides a user-friendly interface to
-              explore live flight information.
-            </p>
-
-            <a href="https://ringomar.github.io/rinsky/" class="btn btn-success">Go to website</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <main class="container" id="main">
+    <ul class="list-group" id="projectList">
+      <!-- List items will be generated here by JavaScript -->
+    </ul>
+    <nav aria-label="Page navigation bg-cc">
+      <ul class="pagination justify-content-center" id="paginationControls">
+        <!-- Pagination controls will be generated here by JavaScript -->
+      </ul>
+    </nav>
+  </main>
 
   <div class="container">
     <div class="align-items-center row p-5">
@@ -263,6 +180,12 @@
       <a class="text-info text-monospace" href="/policy">PRIVACY POLICY </a>
     </div>
   </footer>
+  <a id="back-to-top" href="#" class="btn btn-info btn-lg back-to-top" role="button"><svg
+      xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000000"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg></a>
+  <script src="BuSwCkjL2p.js"></script>
 </body>
 
 </html>
