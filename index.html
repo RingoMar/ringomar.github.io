@@ -77,6 +77,28 @@
       background-color: #17a2b8;
       border-color: #17a2b8;
     }
+
+    .linkToGit {
+      background: #17a2b8;
+      padding: 5px;
+      animation: flip-diagonal-tr 1.5s ease-out 0s 1 normal none;
+    }
+
+    .leftSide {
+      display: flex;
+      gap: 2rem;
+    }
+
+    @keyframes flip-diagonal-tr {
+
+      0% {
+        transform: rotate3d(1, 1, 0, 0deg);
+      }
+
+      100% {
+        transform: rotate3d(1, 1, 0, 180deg);
+      }
+    }
   </style>
 </head>
 
@@ -86,12 +108,19 @@
       <img src="./0cknzZ01.svg" width="35" height="35" class="d-inline-block align-top" alt="Header logo" />
       RINGO MAR
     </a>
-    <div class="kofi">
-      <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-      <script type="text/javascript">
-        kofiwidget2.init("Support Me on Ko-fi", "#17a2b8", "Y8Y1WZQDA");
-        kofiwidget2.draw();
-      </script>
+    <div class="leftSide">
+      <div class="kofi">
+        <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+        <script type="text/javascript">
+          kofiwidget2.init("Support Me on Ko-fi", "#17a2b8", "Y8Y1WZQDA");
+          kofiwidget2.draw();
+        </script>
+      </div>
+      <div class="linkToGit rounded">
+        <a href="https://github.com/ringomar" target="_blank" rel="noopener noreferrer" title="Link to my github">
+          <img src="./github.svg" alt="github link" height="30" />
+        </a>
+      </div>
     </div>
   </nav>
   <div class="hero">
