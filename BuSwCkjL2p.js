@@ -25,11 +25,11 @@ const projects = [
   },
   {
     imgSrc: "b0p3a4jcQh.png",
-    title: "First Time Chatter",
+    title: "Project Temporal",
     description:
-      "Count the number of new twitch chatters that has came in your chat",
-    link: "",
-    linkText: "",
+      "Temporal is a project that enables users to process near real-time audio and use it to power a bot capable of handling voice commands and tracking spoken information for various purposes.",
+    link: "https://ringomar.github.io/project-temporal",
+    linkText: "Read More",
   },
   {
     imgSrc: "b0p3a4jcQh.png",
@@ -97,11 +97,11 @@ const projects = [
   },
   {
     imgSrc: "b0p3a4jcQh.png",
-    title: "Project Temporal",
+    title: "First Time Chatter",
     description:
-      "Temporal is a project that enables users to process near real-time audio and use it to power a bot capable of handling voice commands and tracking spoken information for various purposes.",
-    link: "https://ringomar.github.io/project-temporal",
-    linkText: "Read More",
+      "Count the number of new twitch chatters that has came in your chat",
+    link: "",
+    linkText: "",
   },
 ];
 

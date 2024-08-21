@@ -51,9 +51,21 @@ permalink: /projects/timekeeper.html
             scroll-behavior: smooth;
         }
 
-        h1.display-1.font-weight-bold.text-white {
+        .videoAction {
+            width: 50rem;
+        }
 
-            animation: flashAndJump 1.5s ease-out;
+        @media only screen and (max-width: 600px) {
+            .videoAction {
+                width: 18rem;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            .videoAction {
+                width: 35rem;
+            }
         }
     </style>
 </head>
@@ -72,7 +84,7 @@ permalink: /projects/timekeeper.html
             </script>
         </div>
     </nav>
-    
+
     <div aria-label="breadcrumb">
         <ol class="breadcrumb bg-dark text-white">
             <li class="breadcrumb-item"><a href="../#main">Home</a></li>
@@ -94,55 +106,48 @@ permalink: /projects/timekeeper.html
                     <figure class="mb-4"><img class="img-fluid rounded" src="./timekeeper.jpg" alt="timekeeperapp" />
                     </figure>
                     <section class="mb-5">
-                        <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the
-                            free human mind. Because it transforms who we are, how we live, and it gives us an
-                            understanding of our place in the universe.</p>
-                        <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it
-                            are everywhere, so there's no reason to think that Earth would be unique in that regard.
-                            Whether of not the life became intelligent is a different question, and we'll see if we find
-                            that.</p>
-                        <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and
-                            carry enough energy into our system to disrupt transportation, communication, the food
-                            chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-5 mb-4">This is a simple web application that displays the elapsed time since a
+                            specified timestamp. It can be useful for tracking how much time has passed since a
+                            particular event or milestone.</p>
                         <h2 class="fw-bolder mb-4 mt-5">How it works</h2>
-                        <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic
-                            thoughts every day and I realized I could hold them to myself or share them with people who
-                            might be interested.</p>
-                        <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened
-                            there because we're twirling knobs here on Earth without knowing the consequences of it.
-                            Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                        <p class="fs-5 mb-4">This program works by displaying a real-time timer that counts how many
+                            hours, minutes, and seconds have passed since a specified start time. When the webpage
+                            loads, it either uses the current time or a time provided through a URL to set the starting
+                            point. The program then continuously calculates the difference between the current time and
+                            this start time, updating the display every fraction of a second.
+                        <p class="fs-5 mb-4">
+                            The result is a dynamic,
+                            live timer that shows elapsed time accurately and smoothly without requiring the user to
+                            refresh the page. This makes it ideal for tracking time during events, live streams, or any
+                            activity where precise time monitoring is needed.</p>
+                        <h2 class="fw-bolder mb-4 mt-5">In Action</h2>
+                        <p class="fs-5 mb-4">
+                            Primally designed for <a href="https://www.twitch.tv/kaicenat" target="_blank"
+                                rel="noopener noreferrer">KaiCenat</a> it can be seen when he is doing a marathon stream
+                            mostly.
+
+                        </p>
+                        <p class="fs-5 mb-4">
+                            A video of kai using the timer, and showing he sent the timer link to <a
+                                href="https://www.youtube.com/c/IShowSpeed" target="_blank"
+                                rel="noopener noreferrer">IShowSpeed</a> during their joint stream marathon.
+                            <video class="videoAction" id="displayVideo" src="./J3r7HCiwYevq8sE2.mp4" muted autoplay
+                                loop></video>
+                        </p>
+                        </p>
                     </section>
                 </article>
 
             </div>
             <div class="col-lg-4">
-                <div class="card mb-4 bg-secondary text-white">
-                    <div class="card-header">Categories</div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#!">Web Design</a></li>
-                                    <li><a href="#!">HTML</a></li>
-                                    <li><a href="#!">Freebies</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="list-unstyled mb-0">
-                                    <li><a href="#!">JavaScript</a></li>
-                                    <li><a href="#!">CSS</a></li>
-                                    <li><a href="#!">Tutorials</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Side widget-->
                 <div class="card mb-4 bg-secondary text-white">
                     <div class="card-header">Refrances</div>
                     <div class="card-body">
-                        <a href="https://ringomar.github.io/TheTimekeeper/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Docs</a>
-                        <a href="https://github.com/RingoMar/TheTimekeeper" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Github</a>
+                        <a href="https://ringomar.github.io/TheTimekeeper/" class="btn btn-secondary btn-lg active"
+                            role="button" aria-pressed="true">Docs</a>
+                        <a href="https://github.com/RingoMar/TheTimekeeper" class="btn btn-secondary btn-lg active"
+                            role="button" aria-pressed="true">Github</a>
                     </div>
                 </div>
             </div>
@@ -161,10 +166,16 @@ permalink: /projects/timekeeper.html
         </div>
     </footer>
     <a id="back-to-top" href="#" class="btn btn-info btn-lg back-to-top" role="button"><svg
-        xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000000"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M18 15l-6-6-6 6" />
-      </svg></a>
+            xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000000"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6" />
+        </svg></a>
+
+    <script>
+        document.getElementById('displayVideo').addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
