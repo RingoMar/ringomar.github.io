@@ -1,6 +1,6 @@
 const projects = [
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Time+Keeper",
     title: "The Time Keeper",
     description:
       "This project is creating a tool for Kai Ceant to use during marathon gaming sessions. The tool leverages Unix timestamps, which are numerical time representations, to potentially schedule breaks, segment the marathon for pacing or challenges, and even automate tasks during the gameplay.",
@@ -8,7 +8,7 @@ const projects = [
     linkText: "Read More...",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Place+Control",
     title: "Place Control",
     description:
       "My most successful website helper yet - used my many in the r/Place event in order to control a group of people to place pixels.",
@@ -16,7 +16,7 @@ const projects = [
     linkText: "Read More",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=BoardQuelle",
     title: "BoardQuelle",
     description:
       "Ever wonder what goes on in Zaquelle's mind? BoardQuelle archives it all - the wildest, the weirdest, and everything in between.",
@@ -24,7 +24,7 @@ const projects = [
     linkText: "View Site",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Temporal",
     title: "Project Temporal",
     description:
       "Temporal is a project that enables users to process near real-time audio and use it to power a bot capable of handling voice commands and tracking spoken information for various purposes.",
@@ -32,7 +32,7 @@ const projects = [
     linkText: "Read More",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Rin+Sky",
     title: "Rin Sky",
     description:
       "Idle screen program like what you see in sci-fi shows that shows all the planes passing over in the given time",
@@ -40,7 +40,7 @@ const projects = [
     linkText: "Vist Site",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Yume",
     title: "Yume",
     description:
       "Limited by hardware I spent hours working on computer vision!",
@@ -48,7 +48,7 @@ const projects = [
     linkText: "Github",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Rin+Rain",
     title: "Rin Rain",
     description:
       "I measured the rain through the dry season here and the results were interesting...",
@@ -64,7 +64,7 @@ const projects = [
     linkText: "Github",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Rin+IRC",
     title: "Rin IRC",
     description:
       "IRC is going out of style but is good to have backwards compatabitly....",
@@ -80,7 +80,7 @@ const projects = [
     linkText: "Vist",
   },
   {
-    imgSrc: "b0p3a4jcQh.png",
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Kick+EQ",
     title: "kickeq",
     description:
       "Level up your browsing experience on Kick.com! Let's add a smooth scroll wheel for effortless navigation and a built-in compressor to keep your browsing cool and efficient. Imagine zipping through content like a boss!",

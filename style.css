@@ -11,7 +11,44 @@
 
 :target {
   border-color: var(--rin-blue-light);
-  box-shadow: 0 0 10px var(--rin-blue-light);
+  transition: color 0.3s ease;
+  animation: flash 2.5s ease-out;
+  color: #51CFB1;
+}
+
+
+@keyframes flash {
+  0% {
+    color: #060762;
+  }
+
+  10% {
+    color: #0D468E; 
+  }
+
+  15% {
+    color: #060762; 
+  }
+
+  20% {
+    color: #0D468E;
+  }
+
+  30% {
+    color: #060762; 
+  }
+
+  50% {
+    color: #8EE3AF; 
+  }
+
+  75% {
+    color: #51CFB1; 
+  }
+
+  100% {
+    color: #CDF4CE; 
+  }
 }
 
 body,
@@ -52,8 +89,7 @@ a:hover {
 
 article a[href^="http"]::after,
 .card-body a[href^="https://"]::after,
-article a[href^="https://"]::after
-{
+article a[href^="https://"]::after {
   content: "";
   width: 20px;
   height: 18px;
@@ -195,6 +231,7 @@ article a[href^="https://"]::after
 }
 
 @media (min-width: 1200px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -207,4 +244,8 @@ article a[href^="https://"]::after
 .hero {
   background-color: #343a40;
   background-image: url(./assets/topography.svg);
+}
+
+.page-footer {
+  border-top: 2px solid #4F565A ;
 }
