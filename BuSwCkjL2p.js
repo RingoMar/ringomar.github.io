@@ -8,6 +8,14 @@ const projects = [
     linkText: "Read More...",
   },
   {
+    imgSrc: "https://dummyimage.com/256x256/272730/fff&text=FSM+Lens",
+    title: "FSM lens",
+    description:
+      "A python based analytical tool that cycles through text and conjugates trends to graph data.",
+    link: "https://fsm-mod-stats.vercel.app",
+    linkText: "View Site",
+  },
+  {
     imgSrc: "https://dummyimage.com/256x256/272730/fff&text=Place+Control",
     title: "Place Control",
     description:
