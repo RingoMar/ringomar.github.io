@@ -130,6 +130,7 @@ function renderProjects() {
     const img = document.createElement("img");
     img.className = "img-responsive img-rounded";
     img.src = project.imgSrc;
+    img.alt = project.title;
     listItem.appendChild(img);
 
     const heading = document.createElement("h3");
