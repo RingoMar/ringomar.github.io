@@ -1,7 +1,5 @@
 {
-    "rewrites": [
-      { "source": "/timekeeper", "destination": "/public/projects/timekeeper.html" },
-      { "source": "/placecontrol", "destination": "/public/websites/placecontrol.html" }
+    "rewrites":  [
+      {"source": "/(.*)", "destination": "/"}
     ]
   }
-  
