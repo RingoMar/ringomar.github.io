@@ -1,4 +1,4 @@
-# ![logo](0cknzZ01.svg) RINGOMAR.GITHUB.IO
+# ![logo](./public/0cknzZ01.svg) RINGOMAR.GITHUB.IO
 
 A website for project documentation can be found on my GitHub page. 
  
