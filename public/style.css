@@ -23,11 +23,11 @@
   }
 
   10% {
-    color: #0D468E; 
+    color: #0D468E;
   }
 
   15% {
-    color: #060762; 
+    color: #060762;
   }
 
   20% {
@@ -35,19 +35,19 @@
   }
 
   30% {
-    color: #060762; 
+    color: #060762;
   }
 
   50% {
-    color: #8EE3AF; 
+    color: #8EE3AF;
   }
 
   75% {
-    color: #51CFB1; 
+    color: #51CFB1;
   }
 
   100% {
-    color: #CDF4CE; 
+    color: #CDF4CE;
   }
 }
 
@@ -247,5 +247,35 @@ article a[href^="https://"]::after {
 }
 
 .page-footer {
-  border-top: 2px solid #4F565A ;
+  border-top: 2px solid #4F565A;
+}
+
+.cookie-law {
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 5%;
+  color: white;
+  z-index: 999;
+  box-shadow: 3px -3px 3px rgb(0 0 0 / 6%);
+}
+
+.cookieButtons > .btn-primary {
+  background-color: #60C0AB;
+  border-color: #51A6A6;
+  color: #DBF5CC;
+}
+.cookieButtons > .btn-danger {
+  background-color: #0D468E;
+  border-color: #0D468E;
+}
+
+.cookieButtons {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
 }
