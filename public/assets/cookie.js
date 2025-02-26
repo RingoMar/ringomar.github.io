@@ -97,16 +97,20 @@ window.onload = function(){
     html += '<button class="btn btn-primary" id="btn_accept" onclick="CookieBanner.accept();"><span>Accept</span></button>';
     html += '<button class="btn btn-danger" id="btn_deny" onclick="CookieBanner.deny();"><span>Deny</span></button>';
     html += '</div></div>'
-    CookieBanner.consentCallBack = (function () {
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-0GS2KLZXCG', 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('send', 'pageview');
-
-    })
+    CookieBanner.consentCallBack = (function () {  
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-0GS2KLZXCG";
+        document.head.appendChild(script);
+    
+        script.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ dataLayer.push(arguments); }
+            window.gtag = gtag;
+    
+            gtag('js', new Date());
+            gtag('config', 'G-0GS2KLZXCG', { 'anonymize_ip': true });
+        };
+    });
     CookieBanner.showIfCookieMissing(html);
 }
