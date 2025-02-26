@@ -98,19 +98,32 @@ window.onload = function(){
     html += '<button class="btn btn-danger" id="btn_deny" onclick="CookieBanner.deny();"><span>Deny</span></button>';
     html += '</div></div>'
     CookieBanner.consentCallBack = (function () {  
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = "https://www.googletagmanager.com/gtag/js?id=G-0GS2KLZXCG";
-        document.head.appendChild(script);
-    
-        script.onload = function () {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){ dataLayer.push(arguments); }
-            window.gtag = gtag;
-    
-            gtag('js', new Date());
-            gtag('config', 'G-0GS2KLZXCG', { 'anonymize_ip': true });
-        };
+
+    // Ensure Google Tag Manager is only added once
+    if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+        return;
+    }
+
+    // Load the gtag script asynchronously
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-0GS2KLZXCG";
+
+    // Append script to head and wait for it to load
+    script.onload = function () {
+        // Ensure dataLayer is initialized
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'G-0GS2KLZXCG', { 'anonymize_ip': true });
+
+        console.log("Google Tag Manager (gtag.js) loaded successfully");
+    };
+
+    document.head.appendChild(script);
     });
     CookieBanner.showIfCookieMissing(html);
 }
