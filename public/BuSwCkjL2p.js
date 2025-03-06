@@ -4,7 +4,7 @@ const projects = [
     title: "The Time Keeper",
     description:
       "This project is creating a tool for Kai Ceant to use during marathon gaming sessions. The tool leverages Unix timestamps, which are numerical time representations, to potentially schedule breaks, segment the marathon for pacing or challenges, and even automate tasks during the gameplay.",
-    link: "./projects/timekeeper.html",
+    link: "./projects/timekeeper",
     linkText: "Read More...",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     title: "Place Control",
     description:
       "My most successful website helper yet - used my many in the r/Place event in order to control a group of people to place pixels.",
-    link: "./websites/placecontrol.html",
+    link: "./websites/placecontrol",
     linkText: "Read More",
   },
   {
