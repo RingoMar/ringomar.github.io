@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --font-fira-sans: "Fira Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-fira-sans);
+}
+
+@theme {
+  --animate-scroll: slide 120s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+
+  @keyframes slide {
+    0% {
+      background-position: center 3240px;
+    }
+
+    25% {
+      background-position: center 2400px;
+    }
+
+    50% {
+      background-position: center 720px;
+    }
+
+    75% {
+      background-position: center 180px;
+    }
+
+    100% {
+      background-position: center 0;
+    }
+  }
+}
