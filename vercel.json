@@ -1,0 +1,6 @@
+{
+    "rootDirectory": "./website",
+    "buildCommand": "cd website & npm install && npm run build",
+    "outputDirectory": "./website/.next"
+  }
+  
