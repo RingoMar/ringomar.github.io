@@ -14,12 +14,12 @@ export default function CheckActivePage() {
         </Link>
       </li>
       <li>
-        <Link href="#" className={`block rounded-sm px-3 py-2 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-slate-700 dark:border-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-slate-500 ${pathname === "projects" ? "text-blue-600" : "text-gray-900 dark:text-white"} `}>
+        <Link href="/projects" className={`block rounded-sm px-3 py-2 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-slate-700 dark:border-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-slate-500 ${pathname === "/projects" ? "text-blue-300" : "text-gray-900 dark:text-white"} `}>
           Projects
         </Link>
       </li>
       <li>
-        <Link href="#" className={`block rounded-sm px-3 py-2 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-slate-700 dark:border-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-slate-500 ${pathname === "websites" ? "text-blue-600" : "text-gray-900 dark:text-white"}`}>
+        <Link href="/websites" className={`block rounded-sm px-3 py-2 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-slate-700 dark:border-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-slate-500 ${pathname === "/websites" ? "text-blue-300" : "text-gray-900 dark:text-white"}`}>
           Websites
         </Link>
       </li>
