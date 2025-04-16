@@ -5,7 +5,7 @@
       "title": "The Time Keeper",
       "description": "This project is creating a tool for Kai Ceant to use during marathon gaming sessions. The tool leverages Unix timestamps, which are numerical time representations, to potentially schedule breaks, segment the marathon for pacing or challenges, and even automate tasks during the gameplay.",
       "link": "/projects/timekeeper",
-      "linkText": "Read More..."
+      "linkText": "Read More"
     },
     {
       "imgSrc": "https://dummyimage.com/256x256/1e2939/fff&text=FSM+Lens",

@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Ringo Mar",
+};
+
 export default function pp() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 p-8 text-base leading-9 text-gray-800 dark:bg-gray-900 dark:text-white">

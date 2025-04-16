@@ -1,6 +1,10 @@
 import OutLink from "@/lib/OutLink";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Place Control Blog | Ringo Mar",
+};
 
 export default function dock_placecontrol() {
   return (
@@ -55,7 +59,7 @@ export default function dock_placecontrol() {
             <p className="mb-1">The cyan color being part of the final version was changed out for a blue color that matches Destiny's theme.</p>
             <Image width={900} height={400} src="/place/brave_1689956368.png" className="pointer-events-none mb-4 rounded object-contain select-none" alt="Responsive image" />
             <p className="mb-1">Notice the "DEFCON" button that never made it into the final version it was re/placed later for start all button.</p>
-            <Image width={900} height={400} src="/place/brave_1689960979.gif" className="pointer-events-none rounded object-contain select-none" alt="Responsive image" />
+            <Image width={900} height={400} src="/place/brave_1689960979.gif" unoptimized className="pointer-events-none rounded object-contain select-none" alt="Responsive image" />
             <div className="embed-responsive embed-responsive-16by9">
               <video src="/place/brave_1689956472.mp4" controls autoPlay loop className="pointer-events-none rounded object-contain select-none" />
             </div>

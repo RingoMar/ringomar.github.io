@@ -1,4 +1,8 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Websites | Ringo Mar",
+};
 
 export default function website() {
   return (
@@ -30,7 +34,7 @@ export default function website() {
               <svg className="me-1.5 h-2.5 w-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                 <path d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
               </svg>
-              Utill
+              Info
             </p>
             <h2 className="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">Project Temporal</h2>
             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">A case study on making twitch bots that listens to a stream and can run commands based on voice activation.</p>
