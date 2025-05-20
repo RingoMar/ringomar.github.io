@@ -1,4 +1,9 @@
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | Ringo Mar",
+};
 
 const TermsOfService = () => {
   return (
