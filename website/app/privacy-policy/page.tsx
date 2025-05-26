@@ -59,8 +59,8 @@ export default function pp() {
 
       <p className="mb-8 text-lg">
         For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at{" "}
-        <a href="mailto:ringomar31@gmail.com" className="text-blue-600 underline hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
-          ringomar31@gmail.com
+        <a href="mailto:contact@ringomar.com" className="text-blue-600 underline hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+          contact@ringomar.com
         </a>
         .
       </p>
