@@ -96,6 +96,11 @@
   dependencies:
     "csstype" "^3.0.2"
 
+"@vercel/speed-insights@^1.2.0":
+  "integrity" "sha512-y9GVzrUJ2xmgtQlzFP2KhVRoCglwfRQgjyfY607aU0hh0Un6d0OUyrJkjuAlsV18qR4zfoFPs/BiIj9YDS6Wzw=="
+  "resolved" "https://registry.npmjs.org/@vercel/speed-insights/-/speed-insights-1.2.0.tgz"
+  "version" "1.2.0"
+
 "autoprefixer@^10.4.21":
   "integrity" "sha512-O+A6LWV5LDHSJD3LjHYoNi4VLsj/Whi7k6zG12xTYaU4cQ8oxQGckXNX8cRHK5yOZ/ppVHe0ZBXGzSV9jXdVbQ=="
   "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.21.tgz"
@@ -244,7 +249,7 @@
   "resolved" "https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz"
   "version" "0.4.6"
 
-"next@15.2.3":
+"next@>= 13", "next@15.2.3":
   "integrity" "sha512-x6eDkZxk2rPpu46E1ZVUWIBhYCLszmUY6fvHBFcbzJ9dD+qRX6vcHusaqqDlnY+VngKzKbAiG2iRCkPbmi8f7w=="
   "resolved" "https://registry.npmjs.org/next/-/next-15.2.3.tgz"
   "version" "15.2.3"
@@ -322,7 +327,7 @@
   dependencies:
     "scheduler" "^0.25.0"
 
-"react@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", "react@^19.0.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0":
+"react@^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc", "react@^18 || ^19 || ^19.0.0-rc", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", "react@^19.0.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0":
   "integrity" "sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-19.0.0.tgz"
   "version" "19.0.0"

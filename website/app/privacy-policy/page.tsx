@@ -9,6 +9,10 @@ export default function pp() {
     <div className="flex min-h-screen flex-col bg-gray-50 p-8 text-base leading-9 text-gray-800 dark:bg-gray-900 dark:text-white">
       <h1 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">Privacy Policy</h1>
 
+      <p className="mb-4">
+        Our Privacy Policy were last updated on <strong>Thu Jun 05 2025 18:42:45 GMT-0400 (Atlantic Standard Time)</strong>.
+      </p>
+
       <p className="mb-8 text-lg">This Privacy Policy describes how your personal information is collected, used, and shared when you visit Ringo Mar - Portfolio & Projects (the "Site").</p>
 
       <h2 className="mb-4 text-2xl font-semibold text-gray-900 md:text-3xl dark:text-white">Personal Information We Collect</h2>

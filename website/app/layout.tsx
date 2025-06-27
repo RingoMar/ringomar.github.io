@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Ringo Mar | Portfolio & Projects",
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <Footer />
         </Providers>
       </body>
+      <SpeedInsights/>
     </html>
   );
 }
