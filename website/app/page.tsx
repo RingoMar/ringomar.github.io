@@ -34,18 +34,30 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-sm max-sm:mx-auto dark:border-gray-700 dark:bg-gray-800">
+        <div className="max-w-sm rounded-lg border border-gray-200 bg-white shadow-sm max-sm:mx-auto dark:border-gray-700 dark:bg-gray-800">
           <div className="flex h-full flex-col justify-center p-6">
-            <a href="#">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">EMPTY</h5>
+            <a href="https://potat.app/">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">🥔 Potat Botat</h5>
             </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Some Subtext</p>
-            <Link href="projects/ftc" className="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Use Now
-              <svg className="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </Link>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Do you or your streamer use PotatBotat on Twitch and you're wondering, "I want this feature!"? Use the command <code className="bg-slate-600 px-2 mr-0.5 text-white">#suggest new feature</code>
+              and someone will look at it within a week. Stay updated on your suggestion with the
+              <code className="bg-slate-600 px-2 text-white ml-0.5">#suggest list</code> command.
+            </p>
+          </div>
+          <div className="hidden max-w-sm rounded-lg border border-gray-200 bg-white shadow-sm max-sm:mx-auto dark:border-gray-700 dark:bg-gray-800">
+            <div className="flex h-full flex-col justify-center p-6">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">EMPTY</h5>
+              </a>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Some Subtext</p>
+              <Link href="projects/ftc" className="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Use Now
+                <svg className="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
